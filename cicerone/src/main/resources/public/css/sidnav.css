@@ -1,0 +1,116 @@
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 3;
+  top: 50;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 0;
+  transition: 0.5s;
+  color: #818181 ;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .topheader {
+  background-color: #222;
+  border-bottom: 1px solid #333;
+}
+
+
+.sidenav .filter{
+  border-bottom: 1px solid #777;
+}
+
+.sidenav .active {
+  border-left: 10px solid #fff;
+  background-color: #222
+}
+
+.sidenav .filter:hover {
+  border-left: 10px solid #4db6ac;
+  background-color: #222
+}
+
+.sidenav .searchicon {
+  width: 17px;
+  height: 17px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  font-size: 30px;
+  margin-left: 0px;
+  z-index: 1;
+}
+
+.avatarmain {
+  width: 60px;
+  height: 60px;
+}
+
+.checked {
+  color: orange;
+}
+
+.allborder {
+  border: 1px solid black;
+}
+
+.avataricon {
+  width: 20px;
+  height: 20px;
+}
+
+.fuckmargin{
+  margin-left: 250px;
+  padding:0;
+  transition: 0.5s;
+}
+
+.leftnavbutton {
+  border-radius: 0 50% 50% 0;
+  background-color: #111;
+  position: fixed;
+  z-index: 1;
+  top: 50;
+  left: 0px;
+  width: 20px;
+  height:30px;
+  margin-left: 250px;
+  padding: 0;
+  transition: 0.5s;
+}
+.leftnavbutton:hover {
+  background-color: #555;
+}
+@media screen and (max-width: 500px) {
+  #main {
+    margin-left: 0;
+  }
+  .sidenav {
+    left: -250px;
+    height: 100%;
+  }
+  .leftnavbutton {
+    margin-left:0;
+  }
+
+}
